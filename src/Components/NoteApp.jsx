@@ -139,9 +139,9 @@ const NoteApp = () => {
 
             {/* Add/Edit Note Modal */}
             {showForm && (
-                <div className="fixed inset-0 bg-black/30 flex items-center justify-center z-50 ">
+                <div className="fixed inset-0 bg-black/30  flex items-center justify-center z-50 ">
                     <form
-                        className="bg-white rounded-2xl p-4   shadow-2xl flex flex-col gap-2 transition-all"
+                        className="bg-white rounded-2xl p-4 max-w-[60%] max-h-[500px] overflow-y-auto shadow-2xl flex flex-col gap-2 transition-all"
                         onSubmit={handleSubmit}
                     >
                         <h2 className="text-2xl font-semibold text-gray-800 mb-1">
